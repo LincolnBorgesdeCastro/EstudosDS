@@ -1,0 +1,12 @@
+name: UsuariosAtivos
+title: UsuariosAtivos
+username:
+account: quantidadeusuariosativos
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 252388
+bundleId: 1160424
+url: https://quantidadeusuariosativos.shinyapps.io/UsuariosAtivos/
+when: 1514995063.0077
+asMultiple: FALSE
+asStatic: FALSE

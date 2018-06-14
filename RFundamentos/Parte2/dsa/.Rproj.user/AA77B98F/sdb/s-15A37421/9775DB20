@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# RProfiler\n\n\na <- c(1, 2, 3)\nb <- c(4, 5, 6)\n\n# Iniciando o profile\n?Rprof\nRprof(\"debug.txt\")\ndf = data.frame(a, b)\ndf\n\n# Codigo que nao deve fazer parte do profile\nRprof(NULL)\nstr(df)\n\n# Interrompendo o profile\nRprof()\n\n# Sumarizando os resultados\nsummaryRprof(\"debug.txt\")\n\n\n# Utilizando um arquivo temporario\nRprof(tmp <- tempfile())\nexample(glm)\nRprof()\nsummaryRprof(tmp)\n\n\ninstall.packages(\"profr\")\nlibrary(profr)\nlibrary(ggplot2)\n?profr\n\nx = profr(example(glm))\nggplot(x)\n\n\n\n\n\n",
+    "created" : 1469727331882.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "3805516363",
+    "id" : "9775DB20",
+    "lastKnownWriteTime" : 1469727346,
+    "last_content_update" : 1469727346728,
+    "path" : "D:/RFundamentos/Parte4/RProfiler.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
